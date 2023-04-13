@@ -1,9 +1,12 @@
-name: Azure Static Web Apps CI/CD
+name: ReactClientCICD
 
 on:
   push:
     branches:
       - master
+    paths:
+      - 'reactclient/**'
+      - '.github/workflows/**'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
